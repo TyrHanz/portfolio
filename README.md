@@ -6,19 +6,14 @@
 
 ## 기술 스택
 
-![HTML](https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![CSS](https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-222222?style=for-the-badge&logo=githubpages&logoColor=white)
-
-### 프로젝트에서 다룬 iOS 기술
-
 ![Swift](https://img.shields.io/badge/Swift-F05138?style=for-the-badge&logo=swift&logoColor=white)
 ![UIKit](https://img.shields.io/badge/UIKit-0A84FF?style=for-the-badge&logo=apple&logoColor=white)
 ![RxSwift](https://img.shields.io/badge/RxSwift-B7178C?style=for-the-badge)
 ![CoreData](https://img.shields.io/badge/CoreData-4A90E2?style=for-the-badge)
 ![MVVM](https://img.shields.io/badge/MVVM-111827?style=for-the-badge)
 ![Coordinator](https://img.shields.io/badge/Coordinator-2563EB?style=for-the-badge)
+![Supabase](https://img.shields.io/badge/Supabase-3FCF8E?style=for-the-badge&logo=supabase&logoColor=white)
+![WidgetKit](https://img.shields.io/badge/WidgetKit-111827?style=for-the-badge&logo=apple&logoColor=white)
 
 ## 프로젝트
 
