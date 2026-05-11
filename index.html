@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="iOS Developer portfolio template built for GitHub Pages with Swift, SwiftUI, UIKit, and project-focused storytelling.">
+  <meta name="description" content="한주헌 iOS 개발자 포트폴리오. 재고 관리 앱 쟁여 프로젝트의 구조 개선, CoreData 데이터 흐름, UI 컴포넌트화 경험을 정리했습니다.">
   <meta name="theme-color" content="#eef7ff">
-  <title>TyrHanz | iOS Developer Portfolio</title>
+  <title>한주헌 | iOS Developer Portfolio</title>
   <style>
     :root {
       --bg: #eef7ff;
@@ -624,6 +624,14 @@
       flex-direction: column;
     }
 
+    .project-card.featured-project {
+      grid-column: 1 / -1;
+    }
+
+    .project-card.featured-project .case-list {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
     .project-card::before {
       position: absolute;
       inset: -2px -2px auto auto;
@@ -1017,6 +1025,10 @@
         grid-template-columns: 1fr;
       }
 
+      .project-card.featured-project .case-list {
+        grid-template-columns: 1fr;
+      }
+
       .timeline-aside {
         position: static;
       }
@@ -1127,8 +1139,8 @@
       <a class="brand" href="#home" aria-label="홈으로 이동">
         <span class="brand-mark" aria-hidden="true">iOS</span>
         <span>
-          TyrHanz
-          <small>iOS Developer Portfolio</small>
+          한주헌
+          <small>Hanjuheon · iOS Developer</small>
         </span>
       </a>
 
@@ -1146,27 +1158,27 @@
     <section class="page-shell hero" id="home" aria-labelledby="hero-title">
       <div class="hero-copy reveal">
         <span class="eyebrow">Swift-first iOS Developer</span>
-        <h1 id="hero-title">사용자 경험을 끝까지 다듬는 <span class="gradient-text">iOS 개발자</span> TyrHanz입니다.</h1>
-        <p class="lead">SwiftUI와 UIKit으로 문제를 앱의 흐름으로 바꾸고, MVVM 기반 구조와 테스트 가능한 코드로 오래 유지되는 제품을 만듭니다. 프로젝트의 목적, 선택한 기술, 결과를 명확히 보여주는 포트폴리오입니다.</p>
+        <h1 id="hero-title">유지되는 구조를 고민하는 <span class="gradient-text">iOS 개발자</span> 한주헌입니다.</h1>
+        <p class="lead">Swift와 UIKit 기반으로 사용자 흐름을 설계하고, 기능이 늘어나도 흔들리지 않는 화면 전환·데이터 갱신·공통 UI 구조를 고민합니다.</p>
 
         <div class="hero-actions" aria-label="대표 링크">
           <a class="button primary" href="#projects">프로젝트 보기</a>
-          <a class="button secondary" href="mailto:your.email@example.com">이메일 보내기</a>
+          <a class="button secondary" href="mailto:skyofhan@naver.com">이메일 보내기</a>
           <a class="button secondary" href="https://github.com/TyrHanz" target="_blank" rel="noreferrer">GitHub</a>
         </div>
 
         <div class="metric-row" aria-label="핵심 지표">
           <div class="metric-card">
-            <strong>3+</strong>
-            <span>Featured Projects</span>
+            <strong>1</strong>
+            <span>Released iOS App</span>
           </div>
           <div class="metric-card">
-            <strong>12</strong>
-            <span>Reusable Components</span>
+            <strong>2</strong>
+            <span>iOS Developers</span>
           </div>
           <div class="metric-card">
-            <strong>100%</strong>
-            <span>Native Swift Focus</span>
+            <strong>App Store</strong>
+            <span>Release Experience</span>
           </div>
         </div>
       </div>
@@ -1174,9 +1186,9 @@
       <div class="hero-visual" aria-label="iPhone 앱 쇼케이스 목업">
         <div class="halo" aria-hidden="true"></div>
         <div class="glass-panel" aria-hidden="true"></div>
-        <div class="orbital-card top"><span class="chip-icon">UI</span> SwiftUI motion</div>
+        <div class="orbital-card top"><span class="chip-icon">UI</span> UIKit + RxSwift</div>
         <div class="orbital-card left"><span class="chip-icon">MV</span> MVVM + DI</div>
-        <div class="orbital-card bottom"><span class="chip-icon">QA</span> XCTest ready</div>
+        <div class="orbital-card bottom"><span class="chip-icon">DB</span> CoreData Stream</div>
 
         <div class="phone-wrap reveal">
           <div class="phone">
@@ -1191,28 +1203,28 @@
               </div>
               <div class="app-card featured">
                 <small>대표 프로젝트 01</small>
-                <strong>Local-first 생산성 앱</strong>
+                <strong>쟁여 · 재고 관리 앱</strong>
                 <div class="progress" aria-label="완성도 92%">
                   <span style="--value: 92%"></span>
                 </div>
               </div>
               <div class="app-card">
                 <small>Architecture</small>
-                <strong>Coordinator + Dependency Injection</strong>
+                <strong>Coordinator + DI</strong>
                 <div class="progress" aria-label="완성도 84%">
                   <span style="--value: 84%; color: var(--blue);"></span>
                 </div>
               </div>
               <div class="app-card">
-                <small>Experience</small>
-                <strong>1pt 단위 UI polish와 접근성</strong>
+                <small>Data Flow</small>
+                <strong>NSFRC + RxSwift</strong>
                 <div class="progress" aria-label="완성도 88%">
                   <span style="--value: 88%; color: var(--green);"></span>
                 </div>
               </div>
               <div class="app-card">
-                <small>Quality</small>
-                <strong>테스트 가능한 ViewModel 설계</strong>
+                <small>UX Polish</small>
+                <strong>검색 강조 · 필터 비활성화</strong>
                 <div class="progress" aria-label="완성도 79%">
                   <span style="--value: 79%; color: var(--orange);"></span>
                 </div>
@@ -1225,84 +1237,42 @@
 
     <section class="page-shell section" id="projects" aria-labelledby="projects-title">
       <div class="section-heading reveal">
-        <span class="eyebrow">Featured Projects</span>
-        <h2 id="projects-title">코드보다 먼저, 해결한 문제를 보여줍니다.</h2>
-        <p class="lead">해외 포트폴리오의 앱 쇼케이스 방식과 한국 이력서형 설명을 결합해, 채용 담당자와 iOS 리드가 빠르게 판단할 수 있는 카드 구조로 정리했습니다.</p>
+        <span class="eyebrow">Final Project</span>
+        <h2 id="projects-title">쟁여 · 식재료와 생활용품을 함께 관리하는 iOS 재고 관리 앱</h2>
+        <p class="lead">빠른 물품 등록, 재고 수량 관리, 유통기한 확인, 구매 예정 목록까지 이어지는 생활 재고 관리 흐름을 구현했습니다.</p>
       </div>
 
       <div class="project-grid">
-        <article class="project-card glass-card reveal" style="--accent: var(--blue);">
+        <article class="project-card glass-card reveal featured-project" style="--accent: var(--blue);">
           <div class="project-top">
-            <div class="project-icon" aria-hidden="true">01</div>
-            <span class="project-status">App Store 준비</span>
+            <div class="project-icon" aria-hidden="true">쟁</div>
+            <span class="project-status">App Store 배포</span>
           </div>
-          <h3>프로젝트 1: Local-first 할 일 관리 앱</h3>
-          <p>네트워크가 불안정해도 사용자의 작업 흐름이 끊기지 않는 생산성 앱 예시입니다.</p>
+          <h3>최종 프로젝트 소개</h3>
+          <p>식재료와 생활용품을 하나의 앱에서 관리하고, 사용자가 보유한 물품의 수량과 유통기한을 직관적으로 확인할 수 있도록 만든 iOS 앱입니다.</p>
           <div class="case-list">
-            <div class="case-item"><b>문제</b><span>오프라인 상태에서 작성한 데이터가 재접속 후 꼬이는 문제</span></div>
-            <div class="case-item"><b>해결</b><span>로컬 저장소 우선 흐름과 동기화 큐를 분리해 충돌 가능성을 줄임</span></div>
-            <div class="case-item"><b>내 역할</b><span>SwiftUI 화면, ViewModel, 저장소 계층, 에러 상태 UI 설계</span></div>
-            <div class="case-item"><b>결과</b><span>주요 플로우를 3탭 이내로 단축하고 재시도 UX 추가</span></div>
+            <div class="case-item"><b>목적</b><span>보유 재고를 빠르게 등록하고, 부족하거나 유통기한이 임박한 물품을 쉽게 확인할 수 있도록 설계</span></div>
+            <div class="case-item"><b>주요 기능</b><span>바코드, 영수증 OCR, AI 이미지 인식, 직접 입력, 재고 조회, 검색, 필터, 장바구니, 위젯</span></div>
+            <div class="case-item"><b>담당 역할</b><span>재고 조회, 검색, 카테고리 관리, 온보딩, 장바구니 화면 구현 및 화면 구조 개선</span></div>
+            <div class="case-item"><b>성과</b><span>App Store 배포 경험, UT 기반 검색어 강조·필터 비활성화 개선, 공통 UI 컴포넌트 정리</span></div>
+            <div class="case-item"><b>구조 개선</b><span>Coordinator와 DI로 화면 전환과 의존성 흐름을 분리해 ViewController 책임 축소</span></div>
+            <div class="case-item"><b>데이터 흐름</b><span>NSFetchedResultsController를 RxSwift Observable로 공통화해 CoreData 변경 반영 흐름 정리</span></div>
           </div>
           <div class="tag-row" aria-label="기술 스택">
-            <span class="tag">SwiftUI</span>
-            <span class="tag">SwiftData</span>
-            <span class="tag">MVVM</span>
-            <span class="tag">async/await</span>
-          </div>
-          <div class="project-links">
-            <a class="text-link" href="https://github.com/TyrHanz/project-one" target="_blank" rel="noreferrer">GitHub</a>
-            <a class="text-link" href="https://apps.apple.com/" target="_blank" rel="noreferrer">App Store</a>
-          </div>
-        </article>
-
-        <article class="project-card glass-card reveal" style="--accent: var(--green);">
-          <div class="project-top">
-            <div class="project-icon" aria-hidden="true">02</div>
-            <span class="project-status">Open Source</span>
-          </div>
-          <h3>프로젝트 2: 재사용 가능한 iOS 컴포넌트</h3>
-          <p>프로젝트마다 반복되는 UI와 화면 전환 코드를 작고 명확한 모듈로 분리한 예시입니다.</p>
-          <div class="case-list">
-            <div class="case-item"><b>문제</b><span>비슷한 Bottom Sheet, Alert, Empty State가 화면마다 중복 구현됨</span></div>
-            <div class="case-item"><b>해결</b><span>UIKit/SwiftUI 양쪽에서 쓸 수 있는 컴포넌트 API로 정리</span></div>
-            <div class="case-item"><b>내 역할</b><span>컴포넌트 설계, 접근성 라벨, 샘플 앱, README 작성</span></div>
-            <div class="case-item"><b>결과</b><span>새 화면 제작 시 UI 조립 시간을 줄이고 스타일 일관성 확보</span></div>
-          </div>
-          <div class="tag-row" aria-label="기술 스택">
+            <span class="tag">Swift</span>
             <span class="tag">UIKit</span>
-            <span class="tag">SwiftUI</span>
-            <span class="tag">SPM</span>
-            <span class="tag">Accessibility</span>
+            <span class="tag">RxSwift</span>
+            <span class="tag">CoreData</span>
+            <span class="tag">MVVM</span>
+            <span class="tag">Coordinator</span>
+            <span class="tag">Vision OCR</span>
+            <span class="tag">AI API</span>
+            <span class="tag">Supabase</span>
+            <span class="tag">WidgetKit</span>
           </div>
           <div class="project-links">
-            <a class="text-link" href="https://github.com/TyrHanz/project-two" target="_blank" rel="noreferrer">GitHub</a>
-            <a class="text-link" href="https://github.com/TyrHanz/portfolio" target="_blank" rel="noreferrer">Demo</a>
-          </div>
-        </article>
-
-        <article class="project-card glass-card reveal" style="--accent: var(--orange);">
-          <div class="project-top">
-            <div class="project-icon" aria-hidden="true">03</div>
-            <span class="project-status">Case Study</span>
-          </div>
-          <h3>프로젝트 3: API 기반 콘텐츠 앱</h3>
-          <p>검색, 상세, 즐겨찾기, 에러 복구까지 포함한 iOS 앱 기본기를 보여주는 케이스입니다.</p>
-          <div class="case-list">
-            <div class="case-item"><b>문제</b><span>검색 결과 로딩과 빈 상태, API 실패 상태가 사용자에게 불명확함</span></div>
-            <div class="case-item"><b>해결</b><span>상태 모델을 명시하고 Skeleton, Empty, Retry 화면을 분리</span></div>
-            <div class="case-item"><b>내 역할</b><span>URLSession 네트워크 계층, Combine 바인딩, XCTest 작성</span></div>
-            <div class="case-item"><b>결과</b><span>실패 원인과 다음 행동이 보이는 안정적인 탐색 경험 구현</span></div>
-          </div>
-          <div class="tag-row" aria-label="기술 스택">
-            <span class="tag">URLSession</span>
-            <span class="tag">Combine</span>
-            <span class="tag">Core Data</span>
-            <span class="tag">XCTest</span>
-          </div>
-          <div class="project-links">
-            <a class="text-link" href="https://github.com/TyrHanz/project-three" target="_blank" rel="noreferrer">GitHub</a>
-            <a class="text-link" href="https://github.com/TyrHanz/portfolio#projects" target="_blank" rel="noreferrer">Case Study</a>
+            <a class="text-link" href="https://github.com/TyrHanz" target="_blank" rel="noreferrer">GitHub</a>
+            <a class="text-link" href="https://apps.apple.com/" target="_blank" rel="noreferrer">App Store</a>
           </div>
         </article>
       </div>
@@ -1311,23 +1281,23 @@
     <section class="page-shell section" id="skills" aria-labelledby="skills-title">
       <div class="section-heading reveal">
         <span class="eyebrow">Skills</span>
-        <h2 id="skills-title">iOS 앱을 제품처럼 완성하기 위한 기술 스택.</h2>
+        <h2 id="skills-title">실제로 사용한 핵심 기술 스택.</h2>
       </div>
 
       <div class="skills-layout">
         <aside class="skill-summary glass-card reveal">
           <h3>Core Stack</h3>
-          <p>Swift 문법 자체보다 앱의 구조, 사용자 흐름, 실패 처리, 유지보수성을 함께 설명할 수 있는 개발자를 목표로 합니다.</p>
+          <p>쟁여 프로젝트에서 실제로 사용한 기술만 정리했습니다. 화면 구현, 데이터 흐름, 구조 개선, 배포 경험을 중심으로 다뤘습니다.</p>
           <div class="stack-cloud" aria-label="핵심 기술">
             <span class="stack-pill">Swift</span>
-            <span class="stack-pill">SwiftUI</span>
             <span class="stack-pill">UIKit</span>
+            <span class="stack-pill">RxSwift</span>
             <span class="stack-pill">MVVM</span>
             <span class="stack-pill">Coordinator</span>
-            <span class="stack-pill">Core Data</span>
-            <span class="stack-pill">Firebase</span>
-            <span class="stack-pill">XCTest</span>
-            <span class="stack-pill">GitHub Actions</span>
+            <span class="stack-pill">CoreData</span>
+            <span class="stack-pill">Vision OCR</span>
+            <span class="stack-pill">Supabase</span>
+            <span class="stack-pill">WidgetKit</span>
           </div>
         </aside>
 
@@ -1335,33 +1305,33 @@
           <article class="skill-card glass-card reveal" style="--accent: var(--blue);">
             <h3><span>01</span> App Architecture</h3>
             <ul>
-              <li>MVVM 기반 상태 관리와 ViewModel 테스트 설계</li>
+              <li>MVVM 기반 화면 상태와 비즈니스 로직 분리</li>
               <li>Coordinator로 화면 전환 책임 분리</li>
-              <li>Dependency Injection으로 교체 가능한 모듈 구성</li>
+              <li>DI 구조로 의존성 흐름 정리</li>
             </ul>
           </article>
           <article class="skill-card glass-card reveal" style="--accent: var(--green);">
             <h3><span>02</span> UI Engineering</h3>
             <ul>
-              <li>SwiftUI 선언형 UI와 UIKit 기반 레거시 화면 대응</li>
-              <li>Auto Layout, Dynamic Type, VoiceOver 고려</li>
-              <li>Apple HIG에 맞춘 계층, 여백, 인터랙션 정리</li>
+              <li>UIKit 기반 화면 구현과 Compositional Layout 구성</li>
+              <li>StyledLabel, StyledButton 등 공통 컴포넌트 제작</li>
+              <li>검색어 강조 표시와 비활성 필터 등 UT 기반 UX 개선</li>
             </ul>
           </article>
           <article class="skill-card glass-card reveal" style="--accent: var(--orange);">
             <h3><span>03</span> Data & Networking</h3>
             <ul>
-              <li>URLSession, async/await, Combine 기반 API 연동</li>
-              <li>Core Data/SwiftData 로컬 저장소 모델링</li>
-              <li>로딩, 빈 상태, 실패, 재시도 플로우 설계</li>
+              <li>CoreData 기반 로컬 재고 데이터 관리</li>
+              <li>NSFetchedResultsController + RxSwift 데이터 스트림 구성</li>
+              <li>Vision OCR, AI API, Supabase 연동 경험</li>
             </ul>
           </article>
           <article class="skill-card glass-card reveal" style="--accent: var(--rose);">
             <h3><span>04</span> Quality & Delivery</h3>
             <ul>
-              <li>XCTest로 핵심 비즈니스 로직 검증</li>
               <li>Git/GitHub 기반 협업과 PR 단위 작업</li>
-              <li>TestFlight/App Store 배포 흐름 이해</li>
+              <li>Figma, Notion을 활용한 협업 문서화</li>
+              <li>권한 설정, 개인정보 처리방침, 앱 설명 등 App Store 배포 경험</li>
             </ul>
           </article>
         </div>
@@ -1372,25 +1342,25 @@
       <div class="timeline-wrap">
         <aside class="timeline-aside glass-card reveal">
           <span class="eyebrow">Growth Timeline</span>
-          <h2 id="timeline-title">성장 과정을 한눈에.</h2>
-          <p>한국 채용 포트폴리오에서 자주 보는 타임라인 형식을 가져와 학습, 출시, 협업 경험을 빠르게 파악할 수 있게 구성했습니다.</p>
+          <h2 id="timeline-title">프로젝트를 통해 정리한 성장 과정.</h2>
+          <p>기능 구현에서 시작해 구조 개선, 사용자 테스트, 배포까지 이어진 경험을 시간 흐름으로 정리했습니다.</p>
         </aside>
 
         <ol class="timeline-list">
           <li class="timeline-item glass-card reveal" data-step="1">
-            <time datetime="2024">2024</time>
-            <h3>Swift와 iOS 기본기 집중</h3>
-            <p>Swift 문법, UIKit 화면 구성, Auto Layout, 네트워크 통신, 앱 생명주기를 학습하고 작은 클론 앱으로 기본 흐름을 반복했습니다.</p>
+            <time datetime="2026">2026</time>
+            <h3>KDT 실무형 iOS 앱 개발자 양성과정</h3>
+            <p>Swift와 UIKit 기반 iOS 앱 개발을 학습하고, 팀 프로젝트를 통해 기획, 설계, 구현, 협업, 배포 과정을 경험했습니다.</p>
           </li>
           <li class="timeline-item glass-card reveal" data-step="2">
-            <time datetime="2025">2025</time>
-            <h3>SwiftUI와 아키텍처 확장</h3>
-            <p>SwiftUI, MVVM, Combine, async/await를 적용해 상태 관리와 비동기 흐름을 분리하고 테스트 가능한 구조를 만들었습니다.</p>
+            <time datetime="2026">2026</time>
+            <h3>쟁여 프로젝트 개발</h3>
+            <p>재고 조회, 검색, 카테고리 관리, 온보딩, 장바구니 등 주요 화면을 구현하고 Coordinator, DI, CoreData 데이터 흐름을 정리했습니다.</p>
           </li>
           <li class="timeline-item glass-card reveal" data-step="3">
             <time datetime="2026">2026</time>
-            <h3>출시 품질과 사용자 경험 개선</h3>
-            <p>오류 처리, 접근성, 성능, 배포 체크리스트를 정리하며 단순 구현을 넘어 실제 사용자가 쓰기 좋은 앱을 목표로 다듬고 있습니다.</p>
+            <h3>사용자 테스트 및 App Store 배포</h3>
+            <p>UT 피드백을 반영해 검색·필터 UX를 개선하고, 앱 심사와 스토어 메타데이터 구성 등 출시 과정을 경험했습니다.</p>
           </li>
         </ol>
       </div>
@@ -1400,14 +1370,14 @@
       <div class="contact-card glass-card reveal">
         <div>
           <span class="eyebrow">Contact</span>
-          <h2 id="contact-title">좋은 앱은 작은 디테일을 끝까지 보는 사람에게서 나온다고 믿습니다.</h2>
-          <p>프로젝트 피드백, iOS 포지션, 협업 제안이 있다면 편하게 연락 주세요. 아래 링크는 실제 이메일과 프로필 URL로 교체하면 됩니다.</p>
+          <h2 id="contact-title">기능이 늘어도 흔들리지 않는 구조를 함께 고민하고 싶습니다.</h2>
+          <p>iOS 포지션, 프로젝트 피드백, 협업 제안이 있다면 편하게 연락 주세요.</p>
         </div>
 
         <div class="contact-actions" aria-label="연락 링크">
-          <a class="button primary" href="mailto:your.email@example.com">your.email@example.com</a>
+          <a class="button primary" href="mailto:skyofhan@naver.com">skyofhan@naver.com</a>
           <a class="button secondary" href="https://github.com/TyrHanz" target="_blank" rel="noreferrer">GitHub</a>
-          <a class="button secondary" href="https://www.linkedin.com/in/your-linkedin" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a class="button secondary" href="tel:01096446050">010-9644-6050</a>
           <a class="button secondary" href="https://apps.apple.com/" target="_blank" rel="noreferrer">App Store</a>
         </div>
       </div>
@@ -1415,8 +1385,8 @@
   </main>
 
   <footer class="page-shell footer">
-    <span>© <span id="year">2026</span> TyrHanz. Built for GitHub Pages.</span>
-    <span>Swift · SwiftUI · UIKit · MVVM</span>
+    <span>© <span id="year">2026</span> 한주헌. Built for GitHub Pages.</span>
+    <span>Swift · UIKit · RxSwift · CoreData</span>
   </footer>
 
   <script>
