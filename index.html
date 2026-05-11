@@ -592,22 +592,6 @@
       animation: slowSpin 18s linear infinite;
     }
 
-    .glass-panel {
-      position: absolute;
-      right: 250px;
-      bottom: 18px;
-      z-index: 1;
-      width: 210px;
-      height: 170px;
-      background: rgba(255, 255, 255, 0.34);
-      border: 1px solid rgba(255, 255, 255, 0.66);
-      border-radius: 42px;
-      box-shadow: var(--shadow-soft);
-      backdrop-filter: blur(18px);
-      -webkit-backdrop-filter: blur(18px);
-      transform: rotate(-12deg);
-    }
-
     .project-grid {
       display: grid;
       grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -1016,11 +1000,6 @@
         transform: translateX(-50%) rotate(2deg);
       }
 
-      .glass-panel {
-        right: 50%;
-        transform: translateX(-12%) rotate(-12deg);
-      }
-
       .project-grid {
         grid-template-columns: 1fr;
       }
@@ -1185,7 +1164,6 @@
 
       <div class="hero-visual" aria-label="iPhone 앱 쇼케이스 목업">
         <div class="halo" aria-hidden="true"></div>
-        <div class="glass-panel" aria-hidden="true"></div>
         <div class="orbital-card top"><span class="chip-icon">UI</span> UIKit + RxSwift</div>
         <div class="orbital-card left"><span class="chip-icon">MV</span> MVVM + DI</div>
         <div class="orbital-card bottom"><span class="chip-icon">DB</span> CoreData Stream</div>
