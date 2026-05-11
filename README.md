@@ -1,49 +1,33 @@
 # 한주헌 포트폴리오
 
-iOS 개발자 한주헌의 개인 포트폴리오 사이트입니다.  
-GitHub Pages 배포를 위해 제작했으며, 자기소개, 대표 프로젝트, 기술 스택, 성장 과정, 연락처를 한 페이지에서 확인할 수 있도록 구성했습니다.
+## 한 줄 소개
 
-## 바로가기
+기능이 늘어날수록 구조가 흔들리는 경험을 하면서, **동작하는 코드보다 유지되는 구조**에 더 관심을 갖게 된 신입 iOS 개발자 한주헌입니다.
 
-- Portfolio: https://tyrhanz.github.io/portfolio/
-- GitHub: https://github.com/TyrHanz
-- Email: skyofhan@naver.com
+## 기술 스택
 
-## 구성
+![HTML](https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS](https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-222222?style=for-the-badge&logo=githubpages&logoColor=white)
 
-- `Home`: iOS 개발자로서의 방향성과 핵심 키워드
-- `Projects`: 대표 프로젝트 소개 및 담당 역할 정리
-- `Skills`: 실제 프로젝트에서 사용한 핵심 기술 스택
-- `Timeline`: 학습, 프로젝트, 배포 경험 흐름
-- `Contact`: 이메일, GitHub, 전화번호
+### 프로젝트에서 다룬 iOS 기술
 
-## 대표 프로젝트
+![Swift](https://img.shields.io/badge/Swift-F05138?style=for-the-badge&logo=swift&logoColor=white)
+![UIKit](https://img.shields.io/badge/UIKit-0A84FF?style=for-the-badge&logo=apple&logoColor=white)
+![RxSwift](https://img.shields.io/badge/RxSwift-B7178C?style=for-the-badge)
+![CoreData](https://img.shields.io/badge/CoreData-4A90E2?style=for-the-badge)
+![MVVM](https://img.shields.io/badge/MVVM-111827?style=for-the-badge)
+![Coordinator](https://img.shields.io/badge/Coordinator-2563EB?style=for-the-badge)
 
-포트폴리오에는 최종 프로젝트 `쟁여`를 중심으로 정리했습니다.
+## 프로젝트
 
-- 식재료와 생활용품을 함께 관리하는 iOS 재고 관리 앱
-- 재고 조회, 검색, 카테고리 관리, 온보딩, 장바구니 화면 담당
-- Coordinator, DI, CoreData 데이터 흐름, 공통 UI 컴포넌트 등 구조 개선 경험 정리
-- 사용자 테스트 기반 검색어 강조 표시, 비활성 필터 UX 개선 경험 정리
-- App Store 배포 과정 경험 포함
+| 이름 | 한 줄 설명 | 기술 | 링크 |
+| --- | --- | --- | --- |
+| 쟁여 | 식재료와 생활용품을 함께 관리하는 iOS 재고 관리 앱 | Swift, UIKit, RxSwift, CoreData, MVVM, Coordinator, Vision OCR, Supabase, WidgetKit | [Portfolio](https://tyrhanz.github.io/portfolio/) |
 
-## 사용 기술
+## 연락처
 
-이 포트폴리오 페이지는 별도 프레임워크 없이 정적 페이지로 제작했습니다.
-
-- HTML
-- CSS
-- JavaScript
-- GitHub Pages
-
-프로젝트 소개 섹션에서는 실제 앱 개발에 사용한 Swift, UIKit, RxSwift, CoreData, MVVM, Coordinator 등의 기술을 함께 정리했습니다.
-
-## 로컬 확인
-
-```bash
-open index.html
-```
-
-## 배포
-
-GitHub Pages에서 `main` 브랜치의 root 경로를 배포 대상으로 사용합니다.
+- Email: [skyofhan@naver.com](mailto:skyofhan@naver.com)
+- GitHub: [github.com/TyrHanz](https://github.com/TyrHanz)
+- Portfolio: [tyrhanz.github.io/portfolio](https://tyrhanz.github.io/portfolio/)
